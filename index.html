@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pichler Solutions - Ihr Partner für Prozessautomatisierung</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,10 +19,10 @@
 <body>
     <!-- Header Section -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#">Pichler Solutions</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <a class="navbar-brand" href="index.html">Pichler Solutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation" title="Menü öffnen">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,8 +39,8 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section py-5">
-        <div class="container py-5 mt-5">
+    <section id="home" class="hero-section">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <h1 class="display-4 fw-bold mb-4">IT Solutions for Your <span class="text-primary">Growing Business</span></h1>
@@ -43,7 +48,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="position-relative">
-                        <img src="bild.png" alt="IT professionals working" class="img-fluid rounded shadow-lg position-relative">
+                        <img src="images/bild.png" alt="IT professionals working" class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
@@ -51,32 +56,38 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section py-5">
+    <section id="services" class="section">
         <div class="container">
-            <div class="text-centfer mb-5">
+            <div class="text-center mb-5">
                 <h2 class="section-title">Unsere Leistungen</h2>
-                <div class="divider mx-auto"></div>
+                <div class="divider"></div>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="icon-box mb-4"><i class="bi bi-cpu"></i></div>
-                        <h3 class="service-title">KI-gestützte Prozessautomatisierung</h3>
-                        <p class="service-description">Intelligente Automatisierung von Routineaufgaben, Entscheidungsprozessen und Datenverarbeitung mit modernster KI-Technologie.</p>
+                    <div class="service-card">
+                        <div class="card-body">
+                            <div class="icon-box"><i class="bi bi-cpu"></i></div>
+                            <h3 class="service-title">KI-gestützte Prozessautomatisierung</h3>
+                            <p>Intelligente Automatisierung von Routineaufgaben, Entscheidungsprozessen und Datenverarbeitung mit modernster KI-Technologie.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="icon-box mb-4"><i class="bi bi-code"></i></div>
-                        <h3 class="service-title">Erstellung von Business Applikationen</h3>
-                        <p class="service-description">Wir entwickeln maßgeschneiderte Anwendungen, die Ihre Geschäftsprozesse digitalisieren und optimieren.</p>
+                    <div class="service-card">
+                        <div class="card-body">
+                            <div class="icon-box"><i class="bi bi-code"></i></div>
+                            <h3 class="service-title">Erstellung von Business Applikationen</h3>
+                            <p>Wir entwickeln maßgeschneiderte Anwendungen, die Ihre Geschäftsprozesse digitalisieren und optimieren.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="icon-box mb-4"><i class="bi bi-robot"></i></div>
-                        <h3 class="service-title">Chatbots & Agents</h3>
-                        <p class="service-description">Integration intelligenter Assistenzsysteme zur Automatisierung von Kundeninteraktionen, Support-Anfragen und internen Prozessen.</p>
+                    <div class="service-card">
+                        <div class="card-body">
+                            <div class="icon-box"><i class="bi bi-robot"></i></div>
+                            <h3 class="service-title">Chatbots & Agents</h3>
+                            <p>Integration intelligenter Assistenzsysteme zur Automatisierung von Kundeninteraktionen, Support-Anfragen und internen Prozessen.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,18 +95,18 @@
     </section>
 
     <!-- Solutions Section -->
-    <section id="solutions" class="solutions-section py-5 bg-light">
+    <section id="solutions" class="section section-light">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Unsere Lösungen</h2>
-                <div class="divider mx-auto"></div>
+                <div class="divider"></div>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="solution-card h-100">
-                        <div class="solution-body">
-                            <h3 class="solution-title">Microsoft Power Platform</h3>
-                            <p class="solution-description">Entwickeln Sie Geschäftsanwendungen mit der Microsoft Power Platform. Nutzen Sie die nahtlose Integration von Power Apps, Power Automate, Power BI und Power Virtual Agents für effiziente Unternehmenslösungen.</p>
+                    <div class="solution-card">
+                        <div class="card-body">
+                            <h3 class="service-title">Microsoft Power Platform</h3>
+                            <p>Entwickeln Sie Geschäftsanwendungen mit der Microsoft Power Platform. Nutzen Sie die nahtlose Integration von Power Apps, Power Automate, Power BI und Power Virtual Agents für effiziente Unternehmenslösungen.</p>
                             <div class="video-container">
                                 <iframe 
                                     id="video1"
@@ -108,7 +119,7 @@
                             </div>
                             <div class="solution-examples">
                                 <p class="example-title">Beispielhafte Anwendungen:</p>
-                                <ul class="small">
+                                <ul>
                                     <li>Intelligente Dokumentenverarbeitung mit KI-gestützter Datenextraktion</li>
                                     <li>Digitale Genehmigungsprozesse mit mobiler App-Unterstützung</li>
                                     <li>Automatisierte Berichtserstellung und Datenanalyse</li>
@@ -118,10 +129,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="solution-card h-100">
-                        <div class="solution-body">
-                            <h3 class="solution-title">monday.com</h3>
-                            <p class="solution-description">Optimieren Sie Ihre Geschäftsprozesse mit der vielseitigen Work OS Plattform monday.com. Die intuitive Lösung verbindet Projektmanagement, Prozessautomatisierung und Team-Kollaboration in einem System.</p>
+                    <div class="solution-card">
+                        <div class="card-body">
+                            <h3 class="service-title">monday.com</h3>
+                            <p>Optimieren Sie Ihre Geschäftsprozesse mit der vielseitigen Work OS Plattform monday.com. Die intuitive Lösung verbindet Projektmanagement, Prozessautomatisierung und Team-Kollaboration in einem System.</p>
                             <div class="video-container">
                                 <iframe 
                                     id="video2"
@@ -134,7 +145,7 @@
                             </div>
                             <div class="solution-examples">
                                 <p class="example-title">Beispielhafte Anwendungen:</p>
-                                <ul class="small">
+                                <ul>
                                     <li>Zentrales Kundenauftragsmanagement mit Echtzeit-Statusverfolgung</li>
                                     <li>Intelligente Ressourcenplanung mit automatischen Benachrichtigungen</li>
                                     <li>Digitales Marketing-Management mit Content-Planung</li>
@@ -144,10 +155,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="solution-card h-100">
-                        <div class="solution-body">
-                            <h3 class="solution-title">n8n.io</h3>
-                            <p class="solution-description">Verbinden Sie Ihre Systeme mit der leistungsstarken Workflow-Automatisierung von n8n. Die Open-Source-Plattform ermöglicht flexible Integrationen und automatisierte Prozesse über Systemgrenzen hinweg.</p>
+                    <div class="solution-card">
+                        <div class="card-body">
+                            <h3 class="service-title">n8n.io</h3>
+                            <p>Verbinden Sie Ihre Systeme mit der leistungsstarken Workflow-Automatisierung von n8n. Die Open-Source-Plattform ermöglicht flexible Integrationen und automatisierte Prozesse über Systemgrenzen hinweg.</p>
                             <div class="video-container">
                                 <iframe 
                                     id="video3"
@@ -160,7 +171,7 @@
                             </div>
                             <div class="solution-examples">
                                 <p class="example-title">Beispielhafte Anwendungen:</p>
-                                <ul class="small">
+                                <ul>
                                     <li>Automatische Datensynchronisation zwischen Business-Systemen</li>
                                     <li>KI-gestützte Lead-Qualifizierung mit Vertriebsautomatisierung</li>
                                     <li>Intelligentes Monitoring mit automatischer Berichtserstellung</li>
@@ -174,32 +185,32 @@
     </section>
 
     <!-- Process Section -->
-    <section id="process" class="process-section py-5">
+    <section id="process" class="section">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Gemeinsam zur optimalen Prozesseffizienz</h2>
-                <div class="divider mx-auto"></div>
+                <div class="divider"></div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="process-card text-center">
+                    <div class="process-card">
                         <div class="process-icon"><i class="bi bi-search"></i></div>
-                        <h3 class="process-title">Analyse</h3>
-                        <p class="process-description">Gründliche Analyse Ihrer aktuellen Prozesse, Identifikation von Engpässen und Erstellung einer Automatisierungs-Roadmap.</p>
+                        <h3 class="service-title">Analyse</h3>
+                        <p>Gründliche Analyse Ihrer aktuellen Prozesse, Identifikation von Engpässen und Erstellung einer Automatisierungs-Roadmap.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="process-card text-center">
+                    <div class="process-card">
                         <div class="process-icon"><i class="bi bi-lightbulb"></i></div>
-                        <h3 class="process-title">Konzeption</h3>
-                        <p class="process-description">Entwicklung maßgeschneiderter Automatisierungslösungen, die nahtlos in Ihre bestehende IT-Landschaft integriert werden können.</p>
+                        <h3 class="service-title">Konzeption</h3>
+                        <p>Entwicklung maßgeschneiderter Automatisierungslösungen, die nahtlos in Ihre bestehende IT-Landschaft integriert werden können.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="process-card text-center">
+                    <div class="process-card">
                         <div class="process-icon"><i class="bi bi-rocket"></i></div>
-                        <h3 class="process-title">Umsetzung</h3>
-                        <p class="process-description">Implementierung, Schulung und kontinuierliche Optimierung Ihrer automatisierten Prozesse für nachhaltigen Erfolg.</p>
+                        <h3 class="service-title">Umsetzung</h3>
+                        <p>Implementierung, Schulung und kontinuierliche Optimierung Ihrer automatisierten Prozesse für nachhaltigen Erfolg.</p>
                     </div>
                 </div>
             </div>
@@ -207,44 +218,43 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container py-5">
+    <section id="contact" class="section section-light">
+        <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold mb-3">Kontakt</h2>
-                <p class="lead text-muted mx-auto" style="max-width: 700px;">Setzen Sie sich mit unserem Team in Verbindung, um zu besprechen, wie wir Ihr Unternehmen mit unseren IT-Lösungen unterstützen können.</p>
+                <h2 class="section-title">Kontakt</h2>
+                <p class="section-subtitle">Setzen Sie sich mit unserem Team in Verbindung, um zu besprechen, wie wir Ihr Unternehmen mit unseren IT-Lösungen unterstützen können.</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="card shadow-sm">
-                        <div class="card-body p-4">
-                            <form id="contactForm" onsubmit="return sendEmail(this);">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Name *</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">E-Mail Adresse *</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="subject" class="form-label">Betreff *</label>
-                                    <input type="text" class="form-control" id="subject" name="subject" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Nachricht *</label>
-                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                                </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="privacy" required>
-                                    <label class="form-check-label" for="privacy">
-                                        Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen gespeichert werden. Weitere Informationen finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.
-                                    </label>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-lg" style="background-color: #0a2f65; color: white;">Nachricht senden</button>
-                                </div>
-                            </form>
-                        </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-Mail Adresse *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Betreff *</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Nachricht *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="privacy" required>
+                                <label class="form-check-label" for="privacy">
+                                    Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen gespeichert werden. Weitere Informationen finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.
+                                </label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-lg text-white" style="background-color: var(--primary);">Nachricht senden</button>
+                            </div>
+                            <div id="formStatus" class="mt-3 text-center"></div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -252,7 +262,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer py-4 text-white">
+    <footer class="footer">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
@@ -271,85 +281,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Lightbox JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
-    <script>
-        function sendEmail(form) {
-            var name = form.name.value;
-            var email = form.email.value;
-            var subject = form.subject.value;
-            var message = form.message.value;
-
-            var body = "Name: " + name + "\n";
-            body += "E-Mail: " + email + "\n\n";
-            body += message;
-
-            var mailtoLink = "mailto:info@pichler-solutions.at"
-                + "?subject=" + encodeURIComponent(subject)
-                + "&body=" + encodeURIComponent(body);
-
-            window.location.href = mailtoLink;
-            return false;
-        }
-
-        // YouTube Video Sequential Autoplay
-        var player1, player2, player3;
-        
-        function onYouTubeIframeAPIReady() {
-            player1 = new YT.Player('video1', {
-                events: {
-                    'onReady': onPlayer1Ready,
-                    'onStateChange': onPlayer1StateChange
-                }
-            });
-            
-            player2 = new YT.Player('video2', {
-                events: {
-                    'onReady': onPlayer2Ready,
-                    'onStateChange': onPlayer2StateChange
-                }
-            });
-            
-            player3 = new YT.Player('video3', {
-                events: {
-                    'onReady': onPlayer3Ready,
-                    'onStateChange': onPlayer3StateChange
-                }
-            });
-        }
-
-        function onPlayer1Ready(event) {
-            event.target.mute(); // Mute the video
-            event.target.playVideo();
-        }
-
-        function onPlayer2Ready(event) {
-            event.target.mute(); // Mute the video
-        }
-
-        function onPlayer3Ready(event) {
-            event.target.mute(); // Mute the video
-        }
-
-        function onPlayer1StateChange(event) {
-            if (event.data === YT.PlayerState.ENDED) {
-                player2.unMute(); // Unmute before playing
-                player2.playVideo();
-            }
-        }
-
-        function onPlayer2StateChange(event) {
-            if (event.data === YT.PlayerState.ENDED) {
-                player3.unMute(); // Unmute before playing
-                player3.playVideo();
-            }
-        }
-
-        function onPlayer3StateChange(event) {
-            if (event.data === YT.PlayerState.ENDED) {
-                player1.unMute(); // Unmute before playing
-                player1.playVideo();
-            }
-        }
-    </script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
