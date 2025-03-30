@@ -52,6 +52,11 @@ const VideoPlayer = {
     }
 };
 
+// YouTube API callback
+function onYouTubeIframeAPIReady() {
+    VideoPlayer.setupVideoSequence();
+}
+
 // Navigation Handler
 const Navigation = {
     init: function() {
@@ -127,8 +132,3 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     });
 });
-
-// YouTube API callback
-function onYouTubeIframeAPIReady() {
-    VideoPlayer.setupVideoSequence();
-} 
